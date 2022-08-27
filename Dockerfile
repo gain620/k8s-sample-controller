@@ -19,8 +19,7 @@ RUN go fmt ./...; \
     go vet ./...; \
     go test ./... -coverprofile cover.out; \
     CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -ldflags '-s -w' -o sidecar-injector ./cmd; \
-    upx -9 sidecar-injector;
-#    upx --lzma sidecar-injector;
+    upx --lzma sidecar-injector;
 
 FROM alpine:latest
 
