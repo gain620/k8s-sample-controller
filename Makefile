@@ -62,7 +62,7 @@ build: fmt vet ## Build binary.
 	go build -o bin/sidecar-injector ./cmd/
 
 .PHONY: docker-build
-docker-build: test ## Build docker image.
+docker-build: ## Build docker image.
 	docker build -t ${IMAGE} .
 
 .PHONY: docker-push
