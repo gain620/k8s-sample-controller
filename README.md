@@ -1,4 +1,4 @@
-# k8s-sample-operator
+# k8s-sample-controller
 This is a sample project implementing custom k8s controller using operator-sdk for tutorial purpose.
 
 ---
